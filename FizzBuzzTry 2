@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        public static void Main(string[] args) 
+        {
+            //Write a public method that accepts a number
+
+            //  when the number is divisible by 3 return the word fizz
+
+            //when the number is divisible by 5 return the word buzz
+
+            //when the number is divisible by both, return the word fizzbuzz
+            string Method (int number)
+            {
+                var response = "";
+
+                if (number % 3 == 0) 
+                {
+                    response = "fizz";
+                }
+                if (number % 5 == 0)
+                {
+                    response = "buzz";
+                }
+                if (number % 3 == 0 && number % 5 == 0) 
+                {
+                    response = "fizzbuzz";
+                }
+
+                return response;
+            }
+        }
+    }
+}
+
+
